@@ -1,0 +1,26 @@
+:root {
+    /* fonts */
+    --main-font: 'Hanken Grotesk', sans-serif;
+
+    /* colors */
+    --bg-color: #ECF2FF;
+    --card-bg-color: #FFFFFF;
+    --result-card-bg-color: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
+    --result-bg-color: linear-gradient(180deg, #4D21C9 0%, rgba(37, 33, 201, 0) 100%, rgba(37, 33, 201, 0) 100%);
+    --result-text-color: #CAC9FF;
+    --result-accent-color: #FFFFFF;
+    --summary-accent-color: #303B59;
+    --bg-reaction: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #FF5555;
+    --bg-memory: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #FFB21E;
+    --bg-verbal: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #00BB8F;
+    --bg-visual: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #1125D6;
+    --indicator-reaction-name-color: #FF5555;
+    --indicator-memory-name-color: #FFB21E;
+    --indicator-verbal-name-color: #00BB8F;
+    --indicator-visual-name-color: #1125D6;
+    --hovered-link-bg-color: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
+    --hovered-link-gb-filter: drop-shadow(0px 30px 60px rgba(61, 108, 236, 0.15));
+
+    /* geometry */
+    --card-border-radius: 32px;
+}
