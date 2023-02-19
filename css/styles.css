@@ -1,0 +1,231 @@
+:root {
+    /* fonts */
+    --main-font: 'Hanken Grotesk', sans-serif;
+    
+    /* colors */
+    --bg-color: #ECF2FF;
+    --card-bg-color: #FFFFFF;
+    --result-text-color: #CAC9FF;
+    --summary-accent-color: #303B59;
+    --accent-color: #FFFFFF;
+    --bg-reaction: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #FF5555;
+    --bg-memory: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #FFB21E;
+    --bg-verbal: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #00BB8F;
+    --bg-visual: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #1125D6;
+    --indicator-reaction-name-color: #FF5555;
+    --indicator-memory-name-color: #FFB21E;
+    --indicator-verbal-name-color: #00BB8F;
+    --indicator-visual-name-color: #1125D6;
+
+    /* geometry */
+    --card-border-radius: 32px;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.28;
+
+    background-color: var(--bg-color);
+}
+
+.link {
+    text-decoration: none;
+}
+
+/* Card */
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 736px;
+    display: flex;
+    background-color: var(--card-bg-color);
+    box-shadow: 0px 30px 60px rgba(61, 108, 236, 0.15);
+    border-radius: var(--card-border-radius);
+}
+
+/* result-section */
+.result {
+    padding-top: 38px;
+    padding-bottom: 46px;
+    width: 50%;
+    background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
+    border-radius: var(--card-border-radius);
+}
+.title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.29;
+}
+
+.title-result {
+    margin-bottom: 35px;
+    text-align: center;
+
+    color: var(--result-text-color);
+}
+
+.result-score {
+    width: 200px;
+    height: 200px;
+    padding-top: 55px;
+    margin-left:auto;
+    margin-right: auto;
+    margin-bottom: 28px;
+
+    background: linear-gradient(180deg, #4D21C9 0%, rgba(37, 33, 201, 0) 100%, rgba(37, 33, 201, 0) 100%);
+    border-radius: 50%;
+}
+
+.user-result {
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 1;
+    text-align: center;
+    color: var(--accent-color);
+}
+
+.max-result {
+    font-weight: 700;
+    text-align: center;
+
+    color: var(--result-text-color);
+    mix-blend-mode: normal;
+    opacity: 0.52;
+}
+
+.text-score {
+    margin-bottom: 14px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.31;
+    text-align: center;
+
+    color: var(--accent-color);
+}
+
+.text-score-description {
+    margin-left: auto;
+    margin-right: auto;
+    width: 260px;
+    font-weight: 500;
+    text-align: center;
+ 
+    color: var(--result-text-color);
+}
+
+/* summary-section */
+.summary {
+    padding: 38px 40px 0 40px;
+    width: 50%;
+}
+
+.title-summary {
+    margin-bottom: 28px;
+    color: var(--summary-accent-color);
+}
+
+.indicators {
+    margin-bottom: 41px;
+}
+
+.indicators-item:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.indicators-item {
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    height: 56px;
+    border-radius: 12px;
+}
+
+.indicator-score {
+    margin-left: auto;
+}
+
+.max-score {
+    opacity: 0.5;
+}
+
+.indicators-item.reaction {
+    background: var(--bg-reaction);
+}
+.indicator-reaction-name {
+    color: var(--indicator-reaction-name-color);
+}
+
+.indicators-item.memory {
+    background: var(--bg-memory);
+}
+.indicator-memory-name {
+    color: var(--indicator-memory-name-color);
+}
+
+.indicators-item.verbal {
+    background: var(--bg-verbal);
+}
+.indicator-verbal-name {
+    color: var(--indicator-verbal-name-color);
+}
+
+.indicators-item.visual {
+    background: var(--bg-visual);
+}
+.indicator-visual-name {
+    color: var(--indicator-visual-name-color);
+}
+
+
+
+
+/* .indicators-item.memory {
+    background: var(--bg-memory);
+    color: var(--indicator-memory-name-color);
+}
+
+.indicators-item.verbal {
+    background: --bg-verbal;
+    color: var(--indicator-verbal-name-color);
+}
+
+.indicators-item.visual {
+    background: var(--bg-visual);
+    color: var(--indicator-visual-name-color);
+} */
+
+.continue-link {
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 56px;
+    border-radius: 128px;
+
+    font-size: 18px;
+    text-align: right;
+    color: var(--accent-color);
+    background-color: var(--summary-accent-color);
+}
